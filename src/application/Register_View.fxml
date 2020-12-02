@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_Register">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="0.0" prefWidth="128.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="172.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="246.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="456.0" minHeight="10.0" prefHeight="17.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TextField fx:id="field_account" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="field_hint_ques" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="field_niname" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label text="用户名&lt;*&gt;：" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="密码&lt;*&gt;：" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="确认密码&lt;*&gt;：" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="提示问题：" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="昵称&lt;*&gt;：" GridPane.rowIndex="5">
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+      <Label prefHeight="42.0" prefWidth="300.0" text="提示：下列条目带&lt;*&gt;的为必填，其余选填，点击注册后若注册成功将直接返回登陆界面" textAlignment="JUSTIFY" textOverrun="LEADING_WORD_ELLIPSIS" wrapText="true" GridPane.columnSpan="2">
+         <GridPane.margin>
+            <Insets left="30.0" right="30.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="性别：" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="label_error" prefHeight="21.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets left="65.0" />
+         </padding>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#ButtonRegisterOnClick" prefHeight="38.0" prefWidth="163.0" text="注  册" GridPane.columnSpan="2" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets left="75.0" />
+         </GridPane.margin>
+      </Button>
+      <ChoiceBox fx:id="field_sex" prefWidth="100.0" value="性别" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <PasswordField fx:id="field_password" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </PasswordField>
+      <PasswordField fx:id="field_confirm_password" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </PasswordField>
+   </children>
+</GridPane>

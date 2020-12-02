@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_Forget">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="117.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="183.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="用户名:">
+         <GridPane.margin>
+            <Insets left="60.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="请输入新的密码:" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Label>
+      <Label text="再次输入新的密码:" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Button fx:id="Button_find" mnemonicParsing="false" onAction="#FindButtonOnClick" prefHeight="30.0" prefWidth="100.0" text="查询提示问题" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="ButtonReset" mnemonicParsing="false" onAction="#ResetButtonOnClick" prefHeight="30.0" prefWidth="100.0" text="重置密码" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin>
+      </Button>
+      <TextField fx:id="Field_account" GridPane.columnIndex="1">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label fx:id="LabelQues" prefHeight="60.0" prefWidth="260.0" text="提示：先输入用户名查询提示问题，依若然不记得密码，可在下方进行重置 ;   注意：本窗口将用来显示提示问题或错误信息" wrapText="true" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Label>
+      <PasswordField fx:id="Field_pw" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </PasswordField>
+      <PasswordField fx:id="Field_cpw" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </PasswordField>
+   </children>
+</GridPane>

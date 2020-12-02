@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_Error">
+   <children>
+      <Label layoutX="57.0" layoutY="35.0" text="权限不足！！" />
+      <Button layoutX="53.0" layoutY="63.0" mnemonicParsing="false" onAction="#BackButtonOnClick" prefWidth="80.0" text="返回" />
+   </children>
+</AnchorPane>

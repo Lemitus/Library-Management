@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller_Login">
+   <columnConstraints>
+      <ColumnConstraints fillWidth="false" maxWidth="494.0" minWidth="197.0" prefWidth="197.0" />
+      <ColumnConstraints fillWidth="false" maxWidth="303.0" minWidth="10.0" prefWidth="303.0" />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <ImageView fx:id="login_in_imagine" fitHeight="150.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2">
+         <image>
+            <Image url="@../res/background.png" />
+         </image></ImageView>
+      <Label fx:id="text_account" text="用户名: " GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="130.0" top="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="text_password" text="密    码: " GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="130.0" top="10.0" />
+         </GridPane.margin></Label>
+      <TextField fx:id="field_account" prefHeight="23.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <opaqueInsets>
+            <Insets right="100.0" />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets right="100.0" />
+         </GridPane.margin></TextField>
+      <PasswordField fx:id="field_password" prefHeight="23.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="100.0" />
+         </GridPane.margin>
+      </PasswordField>
+      <Button fx:id="button_login" mnemonicParsing="false" onAction="#LoginOnClick" prefHeight="38.0" prefWidth="200.0" text="登    录" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets left="150.0" top="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Hyperlink fx:id="hyperlink_register" onAction="#RegisterOnClick" text="注册账号" GridPane.columnSpan="2" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets left="150.0" top="10.0" />
+         </GridPane.margin>
+      </Hyperlink>
+      <Hyperlink fx:id="hyperlink_forget" onAction="#ForgetOnClick" text="忘记密码？" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets left="100.0" top="10.0" />
+         </GridPane.margin>
+      </Hyperlink>
+      <CheckBox fx:id="Checkbox_SuperAdmin" mnemonicParsing="false" prefHeight="16.0" prefWidth="201.0" text="超级管理员模式" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="50.0" top="10.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <CheckBox fx:id="Checkbox_Admin" mnemonicParsing="false" text="管理员模式" GridPane.columnSpan="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="150.0" top="10.0" />
+         </GridPane.margin>
+      </CheckBox>
+      <Label fx:id="ErrorText" prefWidth="200.0" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="190.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>
